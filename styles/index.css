@@ -40,6 +40,7 @@
         background: url("../assets/img-hero-s.jpg");
         background-size: cover;
         background-position-y: -90px;
+        background-repeat: no-repeat;        
     }
     .site-heading {
         padding: 200px 0 100px 0;
