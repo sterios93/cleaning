@@ -1,10 +1,6 @@
 .greenColor {
     color: #3cbb80;
 }
-/* Main Navigation */
-#mainNav {
-    top: 50px;
-}
 .nav-font {
     font-size: 21px;
     color: #F3F3F3;
@@ -14,19 +10,11 @@
     color: #3cbb80;
 }
 
-/* header */
-
 .customButtons {
     background: #3cbb80;
     padding: 8px 15px 8px 15px;
     border-radius: 5px;
     color: white;
-}
-.masthead {
-    background: url("../assets/img-hero.jpg");
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .overlay {
     position: absolute;
@@ -37,12 +25,6 @@
     background-color: #212529;
     opacity: 0.5;
 }
-.site-heading {
-    padding: 250px 0 100px 0;
-}
-.site-heading h1 {
-    font-size: 48px;
-}
 .subheading {
     font-size: 24px;
     font-weight: 300;
@@ -50,3 +32,100 @@
     margin: 10px 0 0;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+/* xs */
+@media only screen and (max-width: 480px) {
+    /* header */
+    .masthead {
+        background: url("../assets/img-hero-s.jpg");
+        background-size: cover;
+        background-position-y: -90px;
+    }
+    .site-heading {
+        padding: 200px 0 100px 0;
+    }
+    .site-heading h1 {
+        font-size: 26px;
+    }
+}
+/* sm */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    /* header */
+
+    .masthead {
+        background: url("../assets/img-hero-m.jpg");
+        background-size: cover;
+        background-position-y: -50px;
+        background-repeat: no-repeat;
+    }
+    .site-heading {
+        padding: 150px 0 100px 0;
+    }
+    .site-heading h1 {
+        font-size: 35px;
+    }
+}
+/* md */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* header */
+    .masthead {
+        background: url("../assets/img-hero.jpg");
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .site-heading {
+        padding: 150px 0 100px 0;
+    }
+    .site-heading h1 {
+        font-size: 48px;
+    }
+}
+/* lg */
+@media only screen and (min-width: 985px) {
+    /* Main Navigation */    
+    #mainNav {
+        top: 48px;
+    } 
+    .inverse {
+        background: white;
+    }
+    .inverse a{
+        color: black;
+    }
+    /* header */
+    .masthead {
+        background: url("../assets/img-hero.jpg");
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;        
+    }
+    .site-heading {
+        padding: 200px 0 100px 0;
+    }
+    .site-heading h1 {
+        font-size: 46px;
+    }
+
+    .cleaningBtn {
+        font-size: 18px;
+        color: #F3F3F3;
+        text-decoration: none !important;
+    }
+    .cleaningBtn:hover {
+        font-size: 18px;
+        color: #3cbb80;
+        background: #F3F3F3;
+        text-decoration: none !important;
+    }
+}
+
+
+/* iPhone X Landscape*/
+@media only screen and  (min-device-width: 375px)  and (orientation : landscape)  and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+        .site-heading {
+            padding: 100px 0 100px 0;
+        }
+    }

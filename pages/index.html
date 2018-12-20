@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="../styles/index.css">
     <title>Top Cleaning</title>
 </head>
-<body>
+<body style="height: 100vh;">
     <!-- Contacts navigation -->
-        <nav class="navbar navbar-light bg-dark px-0">
+        <nav class="navbar navbar-light bg-dark px-0 contactNav">
             <div class="container">
                 <div class="row m-0 w-100">
                     <!-- Mobile only -->
@@ -22,9 +22,9 @@
                                 <a class="nav-link text-white py-1" href="mailto:webmaster@example.com"><i class="fas fa-envelope greenColor mr-1"></i>Mail Us</a>
                     </nav>
                     <!-- Above mobile sm and up -->
-                    <nav class="nav mr-md-auto d-none d-sm-flex col justify-content-between justify-content-md-start">
+                    <nav class="nav mr-md-auto d-none d-sm-flex col justify-content-between justify-content-md-start pr-sm-0">
                               <a class="nav-link text-white py-1 mr-2 pl-0" href="#"><i class="fas fa-phone greenColor mr-sm-1"></i> 020 8813 2556</a>
-                              <a class="nav-link text-white py-1" href="#"><i class="fas fa-envelope greenColor mr-sm-1"></i> office@topcleaning.co.uk</a>
+                              <a class="nav-link text-white py-1 pr-sm-0" href="#"><i class="fas fa-envelope greenColor mr-sm-1"></i> office@topcleaning.co.uk</a>
                     </nav>
                     <ul class="nav d-none d-md-flex">
                              <li class="nav-item">
@@ -44,8 +44,8 @@
             </div>
         </nav>
     <!-- Main navigation -->
-            <nav class="navbar navbar-expand-md navbar-light fixed-top" id="mainNav">
-                <div class="container pt-3">
+            <nav class="navbar d-none d-lg-flex navbar-expand-md navbar-light fixed-top" id="mainNav">
+                <div class="container">
                     <span class="navbar-brand text-white">
                         <a to="/">
                             <a href="#" class="nav-font" style="font-size: 32px;">Top Cleaning</a>
@@ -55,7 +55,7 @@
                             type="button" data-toggle="collapse"
                             data-target="#hamburgerMenu" aria-controls="hamburgerMenu"
                             aria-expanded="false" aria-label="Toggle navigation">
-                        <font-awesome-icon icon="bars" class="text-white"/>
+                            <i class="fas fa-bars"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="hamburgerMenu">
                         <ul class="navbar-nav ml-auto">
@@ -88,11 +88,55 @@
                     </div>
                 </div>
             </nav>
+            <!-- Mobile only -->
+            <nav class="navbar d-lg-none navbar-light" id="mainNav">
+                    <div class="container">
+                        <span class="navbar-brand text-white">
+                            <a to="/">
+                                <a href="#" class="nav-font text-dark" style="font-size: 32px;">Top Cleaning</a>
+                            </a>
+                        </span>
+                        <button class="navbar-toggler"
+                                type="button" data-toggle="collapse"
+                                data-target="#mobileMenu" aria-controls="mobileMenu"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="mobileMenu">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <span class="nav-link text-center">
+                                        <a href="/apartments" class="text-dark">Home</a>
+                                    </span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link text-center">
+                                    <a href="/project" class="text-dark">About Us</a>
+                                    </span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link text-center">
+                                    <a href="/about" class="text-dark">Our Services</a>
+                                    </span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link text-center">
+                                    <a href ="/prices" class="text-dark">Prices</a>
+                                    </span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link text-center">
+                                        <a href="/contact" class="text-dark">Contact us</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
     <!-- Header -->
-            <!--Large screens-->
-            <div class="d-none d-sm-block" style="height: 95vh;">
-                    <header class="masthead h-100">
-                        <div class="overlay"></div>
+            <!-- Mobile only -->
+            <div class="d-block d-sm-none">
+                    <header class="masthead h-75">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12 ">
@@ -100,18 +144,68 @@
                                         <h1>Do you wish you had<br>
                                         more free time? We can <br>
                                         make it happen.</h1>
-                                        <div class="mt-3">
-                                            <a href="/schedule" class="customButtons">Schedule Cleaning</a>
+                                        <div class="mt-5">
+                                            <a href="/schedule" class="customButtons rounded-0">Schedule Cleaning</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </header>
-                </div>
+            </div>
+            <!--Large screens-->
+            <div class="d-none d-sm-block" style="height: 100vh;">
+                    <header class="masthead h-100">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <div class="site-heading mt-0 text-white">
+                                        <h1>Do you wish you had<br>
+                                        more free time? We can <br>
+                                        make it happen.</h1>
+                                        <div class="mt-5">
+                                            <a href="/schedule" class="customButtons rounded-0 cleaningBtn">Schedule Cleaning</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+            </div>
     <!-- Jquery scrpits -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Custom Js -->
+    <script>
+        var w = window.innerWidth;
+        var mainNav = document.querySelector('#mainNav');
+        var contactNav = document.querySelector('.contactNav');
+        var scrollPosY = window.scrollY;
+        
+
+        window.addEventListener('scroll', function() {
+            scrollPosY = window.scrollY;
+
+            // Remove contactNav on scroll
+            if (scrollPosY > 0) {
+                contactNav.style.display = 'none';
+                mainNav.style.top = '0px';
+            } else {
+                console.log('Enters else')
+                contactNav.style.display = 'block';
+                mainNav.style.top = '48px';
+            }
+
+            // Inverse mainNav colors on scroll
+            if (w > 990) {
+                if (scrollPosY > 1) { 
+                    mainNav.classList.add('inverse');
+                } else {
+                    mainNav.classList.remove('inverse');
+                }
+            }
+        });
+    </script>
 </body>
 </html>
