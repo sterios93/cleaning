@@ -8,6 +8,9 @@
 .primaryColor {
     color: #3f3f3f;
 }
+.greyText {
+    color: #f3f3f3;
+}
 /* Fonts */
 .sansProFont {
     font-family: 'Source Sans Pro', sans-serif;
@@ -20,8 +23,9 @@
     color: #F3F3F3;
     text-decoration: none !important;
 }
-.nav-font:hover {
-    color: #3cbb80;
+.nav-font:hover, .greenHover:hover {
+    color: #3cbb80!important;
+    text-decoration: none;
 }
 
 .customButtons {
@@ -29,6 +33,12 @@
     padding: 8px 15px 8px 15px;
     border-radius: 5px;
     color: white;
+}
+.customWhiteButtons {
+    background: white;
+    padding: 8px 15px 8px 15px;
+    border-radius: 5px;
+    color: #3cbb80!important;
 }
 .overlay {
     position: absolute;
@@ -110,6 +120,12 @@
         background-repeat: no-repeat;        
         background-size: cover;  
     }
+    /* What Clients Says */
+    .clientSay {
+        background: url("../assets/img-clientssay-s.jpg");
+        background-repeat: no-repeat;        
+        background-size: cover;        
+    }
 }
 /* sm */
 @media only screen and (min-width: 480px) and (max-width: 768px) {
@@ -132,6 +148,12 @@
     background: url("../assets/img-whyus-m.jpg");
     background-repeat: no-repeat;        
     background-size: cover;  
+    }
+    /* What Clients Says */
+    .clientSay {
+        background: url("../assets/img-clientssay-m.jpg");
+        background-repeat: no-repeat;        
+        background-size: cover;        
     }
 }
 /* md */
@@ -156,6 +178,12 @@
         background-repeat: no-repeat;        
         background-size: cover;  
       }
+    /* What Clients Says */
+    .clientSay {
+        background: url("../assets/img-clientssay-m.jpg");
+        background-repeat: no-repeat;        
+        background-size: cover;        
+    }
 }
 /* lg */
 @media only screen and (min-width: 985px) {
@@ -198,6 +226,12 @@
     /* Why Choose Us */
     .whyUs {
         background: url("../assets/img-whyus.jpg");
+        background-repeat: no-repeat;        
+        background-size: cover;        
+    }
+    /* What Clients Says */
+    .clientSay {
+        background: url("../assets/img-clientssay.jpg");
         background-repeat: no-repeat;        
         background-size: cover;        
     }
