@@ -1,5 +1,19 @@
+/* Colors */
 .greenColor {
     color: #3cbb80;
+}
+.mainText {
+    color: #838483;
+}
+.primaryColor {
+    color: #3f3f3f;
+}
+/* Fonts */
+.sansProFont {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.latoRegularFont {
+    font-family: 'Lato', sans-serif;
 }
 .nav-font {
     font-size: 21px;
@@ -33,6 +47,48 @@
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+/* Why us */
+/* Overwrite the default styles */
+.nav-tabs .nav-link.active {
+    background: none;
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+}
+.nav-tabs .nav-link {
+    border: none;
+    -webkit-filter: opacity(.5);
+    filter: opacity(.5);
+}
+.nav-tabs .nav-link:hover {
+    border: none;
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+}
+/* Our Services */
+.carousel-indicators {
+    bottom: -50px;
+}
+/* Overwrite default styles */
+.carousel-indicators .active {
+    background: #3cbb80; 
+}
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+/* Our Pricing plan */
+.nav-tabs .pricing.nav-link {
+    color: #000000;
+    border: 2px solid #000000!important;
+}
+.nav-tabs .pricing.nav-link.active,.nav-tabs .pricing.nav-link:hover {
+    color: #3cbb80;
+    border: 2px solid #3cbb80!important;
+}
+.nav-tabs .nav-link.active,.nav-tabs .nav-link:hover {
+    color: #3cbb80;
+}
 /* xs */
 @media only screen and (max-width: 480px) {
     /* header */
@@ -47,6 +103,12 @@
     }
     .site-heading h1 {
         font-size: 26px;
+    }
+    /* Why Choose Us */
+    .whyUs {
+        background: url("../assets/img-whyus-s.jpg");
+        background-repeat: no-repeat;        
+        background-size: cover;  
     }
 }
 /* sm */
@@ -65,6 +127,12 @@
     .site-heading h1 {
         font-size: 35px;
     }
+    /* Why Choose Us */
+    .whyUs {
+    background: url("../assets/img-whyus-m.jpg");
+    background-repeat: no-repeat;        
+    background-size: cover;  
+    }
 }
 /* md */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -82,6 +150,12 @@
     .site-heading h1 {
         font-size: 48px;
     }
+      /* Why Choose Us */
+      .whyUs {
+        background: url("../assets/img-whyus.jpg");
+        background-repeat: no-repeat;        
+        background-size: cover;  
+      }
 }
 /* lg */
 @media only screen and (min-width: 985px) {
@@ -120,6 +194,12 @@
         color: #3cbb80;
         background: #F3F3F3;
         text-decoration: none !important;
+    }
+    /* Why Choose Us */
+    .whyUs {
+        background: url("../assets/img-whyus.jpg");
+        background-repeat: no-repeat;        
+        background-size: cover;        
     }
 }
 
