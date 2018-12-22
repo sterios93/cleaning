@@ -16,7 +16,7 @@
 </head>
 <body style="height: 100vh;">
     <!-- Contacts navigation -->
-        <nav class="navbar navbar-light bg-dark px-0 contactNav">
+        <nav class="navbar navbar-light bg-dark px-0 contactNav fixed-top">
             <div class="container">
                 <div class="row m-0 w-100">
                     <!-- Mobile only -->
@@ -1071,26 +1071,36 @@
         var scrollPosY = window.scrollY;
         
 
+        function resizeHandler() {
+            // Make the initial resize check
+            if (w < 990) {
+                contactNav.classList.remove('fixed-top');
+            } else {
+            contactNav.classList.add('fixed-top');
+            }
+            // Add event listener in case of resize
+            window.addEventListener('resize', function() {
+                w = window.innerWidth;
+
+                if (w < 990) {
+                    contactNav.classList.remove('fixed-top');
+                } else {
+                    contactNav.classList.add('fixed-top');
+                }
+            }) 
+        }
+        resizeHandler();
+
+        // Inverse mainNav colors on scroll
         window.addEventListener('scroll', function() {
             scrollPosY = window.scrollY;
-
             if (w > 990) {
-                // Inverse mainNav colors on scroll
                 if (scrollPosY > 1) { 
                     mainNav.classList.add('inverse');
                 } else {
                     mainNav.classList.remove('inverse');
                 }
-
-                // Remove contactNav on scroll
-                if (scrollPosY > 0) {
-                    contactNav.style.display = 'none';
-                    mainNav.style.top = '0px';
-                } else {
-                    contactNav.style.display = 'block';
-                    mainNav.style.top = '48px';
-                }
-            }
+            } 
         });
     </script>
 </body>
