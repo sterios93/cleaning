@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!--Bootstrap css cdn-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="../../styles/index.css">
+    <title>Deep Cleaning</title>
+</head>
+<body style="height: 100vh; background: #f3f3f3;">
+    <!-- Contacts navigation -->
+        <nav class="navbar navbar-light bg-dark px-0 contactNav fixed-top">
+            <div class="container">
+                <div class="row m-0 w-100">
+                    <!-- Mobile only -->
+                    <nav class="nav d-sm-none d-flex justify-content-between w-100">
+                                <a class="nav-link text-white py-1 mr-2 greenHover" href="tel:555-555-5555"><i class="fas fa-phone greenColor mr-1"></i>Call Us</a>
+                                <a class="nav-link text-white py-1 greenHover" href="mailto:webmaster@example.com"><i class="fas fa-envelope greenColor mr-1"></i>Mail Us</a>
+                    </nav>
+                    <!-- Above mobile sm and up -->
+                    <nav class="nav mr-md-auto d-none d-sm-flex col justify-content-between justify-content-md-start pr-sm-0">
+                              <a class="nav-link text-white py-1 mr-2 pl-0" href="#"><i class="fas fa-phone greenColor mr-sm-1"></i> 020 8813 2556</a>
+                              <a class="nav-link text-white py-1 pr-sm-0" href="#"><i class="fas fa-envelope greenColor mr-sm-1"></i> office@topcleaning.co.uk</a>
+                    </nav>
+                    <ul class="nav d-none d-md-flex">
+                             <li class="nav-item">
+                              <a class="nav-link text-white py-1 greenHover" href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white py-1 greenHover" href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white py-1 greenHover" href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white py-1 pr-0 greenHover" href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- Main navigation -->
+            <nav class="navbar d-none d-lg-flex navbar-expand-md navbar-light fixed-top bg-white navShadow" id="mainNav">
+                <div class="container">
+                    <span class="navbar-brand text-white">
+                            <a href="/pages/index.html" class="nav-font font-weight-bold primaryColor" style="font-size: 32px;">Top Cleaning</a>
+                    </span>
+                    <button class="navbar-toggler"
+                            type="button" data-toggle="collapse"
+                            data-target="#hamburgerMenu" aria-controls="hamburgerMenu"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="hamburgerMenu">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <span class="nav-link text-center">
+                                    <a href="../index.html" class="nav-font primaryColor">Home</a>
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link text-center">
+                                <a href="/project" class="nav-font primaryColor">About Us</a>
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link text-center">
+                                <a href="./services.html" class="nav-font primaryColor">Our Services</a>
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link text-center">
+                                <a href ="/prices" class="nav-font primaryColor">Prices</a>
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link text-center">
+                                    <a href="/contact" class="nav-font primaryColor">Contact us</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Mobile only -->
+            <nav class="navbar d-lg-none navbar-light navShadow" id="mainNav">
+                    <div class="container px-0">
+                        <span class="navbar-brand text-white">
+                                <a href="/pages/index.html" class="nav-font text-dark" style="font-size: 32px;">Top Cleaning</a>
+                        </span>
+                        <button class="navbar-toggler"
+                                type="button" data-toggle="collapse"
+                                data-target="#mobileMenu" aria-controls="mobileMenu"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="mobileMenu">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <span class="nav-link text-center">
+                                        <a href="../index.html" class="text-dark">Home</a>
+                                    </span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link text-center">
+                                    <a href="/project" class="text-dark">About Us</a>
+                                    </span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link text-center">
+                                    <a href="./services.html" class="text-dark">Our Services</a>
+                                    </span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link text-center">
+                                    <a href ="/prices" class="text-dark">Prices</a>
+                                    </span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link text-center">
+                                        <a href="/contact" class="text-dark">Contact us</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+    <!-- Domestic&HouseKeeping -->
+            <div class="d-none d-lg-block"  style="height: 180px;"></div>
+            <div class="d-lg-none"  style="height: 30px;"></div>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 order-2 order-lg-1">
+                            <p class="h3 primaryColor">Deep Cleaning</p>
+                            <img class="mw-100" src="../../assets/img-service8.jpg" alt="img-service2">
+                            <p class="sansProFont mt-4">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.s
+                            </p>
+                            <p class="sansProFont mt-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.s
+                            </p>
+                            <p class="sansProFont mt-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.s
+                            </p>
+                            <table class="table my-5 table-responsive">
+                                    <thead class="thead">
+                                      <tr>
+                                        <th scope="col" class="sansProFont">Domestic Cleaning</th>
+                                        <th scope="col" class="sansProFont">Min h/p visit</th>
+                                        <th scope="col" class="sansProFont">Price</th>                                        
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td class="greenColor sansProFont">weekly (from)</td>
+                                        <td class="sansProFont">2.5 hours</td>                                        
+                                        <td class="sansProFont">&#163;13.00 p/h</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="greenColor sansProFont">for nightly (from)</td>
+                                        <td class="sansProFont">2.5 hours</td>                                        
+                                        <td class="sansProFont">&#163;13.00 p/h</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="greenColor sansProFont">one off (from)</td>
+                                        <td  class="sansProFont">3 hours</td>                                        
+                                        <td class="sansProFont">&#163;15.00 p/h</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                        </div>
+                        <div class="col-12 col-lg-4 order-1 order-lg-2 mb-4">
+                            <p class="h3 primaryColor mb-2">Our Services</p>
+
+                            <div class="d-flex flex-column p-3" style="background: #DEDEDE;">
+                                <a href="/pages/services/domestic.html" class="sansProFont greenHover primaryColor" style="font-size: 18px;">Domestic & House keeping</a>
+                                <hr class="d-block" style="display: block; height: 1px; border: 0; border-top: 3px solid #ccc; margin: 7px 0; padding: 0; ">
+                                <a href="/pages/services/upholstery.html" class="sansProFont greenHover primaryColor" style="font-size: 18px;">Upholstery Cleaning</a>
+                                <hr class="d-block" style="display: block; height: 1px; border: 0; border-top: 3px solid #ccc; margin: 7px 0; padding: 0; ">
+                                <a href="/pages/services/carpet.html" class="sansProFont greenHover primaryColor" style="font-size: 18px;">Carpet Cleaning</a>
+                                <hr class="d-block" style="display: block; height: 1px; border: 0; border-top: 3px solid #ccc; margin: 7px 0; padding: 0; ">
+                                <a href="/pages/services/rug.html" class="sansProFont greenHover primaryColor" style="font-size: 18px;">Rug Cleaning</a>
+                                <hr class="d-block" style="display: block; height: 1px; border: 0; border-top: 3px solid #ccc; margin: 7px 0; padding: 0; ">
+                                <a href="/pages/services/endTenancy.html" class="sansProFont greenHover primaryColor" style="font-size: 18px;">End of Tenancy</a>
+                                <hr class="d-block" style="display: block; height: 1px; border: 0; border-top: 3px solid #ccc; margin: 7px 0; padding: 0; ">
+                                <a href="/pages/services/deep.html" class="sansProFont greenHover primaryColor" style="font-size: 18px;">Deep Cleaning</a>
+                                <hr class="d-block" style="display: block; height: 1px; border: 0; border-top: 3px solid #ccc; margin: 7px 0; padding: 0; ">
+                                <a href="/pages/services/office.html" class="sansProFont greenHover primaryColor" style="font-size: 18px;">Office Cleaning</a>
+                                <hr class="d-block" style="display: block; height: 1px; border: 0; border-top: 3px solid #ccc; margin: 7px 0; padding: 0; ">                  
+                                <a href="/pages/services/afterBuilders.html" class="sansProFont greenHover primaryColor" style="font-size: 18px;">After Builders Cleaning</a>
+                                <hr class="d-block" style="display: block; height: 1px; border: 0; border-top: 3px solid #ccc; margin: 7px 0; padding: 0; ">                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <!-- Let us do your dirty work -->
+            <section style="background: #3cbb80" class="py-3">
+                <div class="d-flex flex-column flex-lg-row  container align-items-center justify-content-between py-3">
+                    <p class="m-0 sansProFont greyText text-center pb-3 pb-lg-0" style="font-size: 18px;">
+                        Let us do your dirty work.Make an appointment Now!
+                    </p>
+                    <a href="/schedule" class="customWhiteButtons rounded-0 col-10 col-lg-3 cleaningBtn sansProFont text-center">Schedule Cleaning</a>                    
+                </div>
+            </section>
+    <!-- Footer -->
+            <footer style="background: #3f3f3f">
+                <div class="container pt-5 pb-3">
+                    <div class="row d-flex flex-column flex-lg-row">
+                        <div class="col-12 col-lg-4">
+                            <p class="h2 font-weight-bold greyText mb-3">Top Cleaning</p>
+                            <p class="greyText">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                            </p>
+                            <nav class="flex-column">
+                                <p class="greyText sansProFont m-0  my-3">
+                                    <i class="fas fa-map-marker-alt mr-3" style="color: #3cbb80"></i>7 Newgate St, London EC1A 7NX
+                                </p>
+                                <a href="tel:+6494461709" class="d-block sansProFont  greyText greenHover  my-3">
+                                        <i class="fas fa-phone mr-3" style="color: #3cbb80"></i>0020 8823 7365
+                                </a>
+                                <a href="mailto:webmaster@example.com" class="d-block sansProFont greyText greenHover  my-3">
+                                        <i class="fas fa-envelope mr-3" style="color: #3cbb80"></i>mail@companyname.com
+                                </a>
+                            </nav>
+                        </div>
+                        <div class="row mt-5 mt-lg-0 col-12 col-lg-8">
+                                <div class="col-6">
+                                        <p class="h3 greyText text-lg-center mb-3">Explore</p>
+            
+                                        <div class="d-flex flex-column">
+                                                <a href="#" class="my-2 greyText sansProFont greenHover text-lg-center">Home</a>
+                                                <a href="#" class="my-2 greyText sansProFont greenHover text-lg-center">About Us</a>
+                                                <a href="#" class="my-2 greyText sansProFont greenHover text-lg-center">Prices</a>
+                                                <a href="#" class="my-2 greyText sansProFont  greenHover text-lg-center">Contact Us</a>
+                                                <a href="#" class="my-2 greyText sansProFont greenHover text-lg-center">Privacy Policy</a>
+                                                <a href="#" class="my-2 greyText sansProFont  greenHover text-lg-center">Terms of Uses</a>        
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-4">
+                                            <p class="h3 greyText mb-3">Services</p>
+                
+                                            <div class="d-flex flex-column">
+                                                    <a href="#" class="my-2 greyText sansProFont greenHover "><i class="fas fa-caret-right greenColor mr-2"></i>Upholstery Cleaning</a>
+                                                    <a href="#" class="my-2 greyText sansProFont greenHover"><i class="fas fa-caret-right greenColor mr-2"></i>Domestic & House Keeping</a>
+                                                    <a href="#" class="my-2 greyText sansProFont greenHover"><i class="fas fa-caret-right greenColor mr-2"></i>Carpet Cleaning</a>
+                                                    <a href="#" class="my-2 greyText sansProFont greenHover"><i class="fas fa-caret-right greenColor mr-2"></i>After Buiders</a>
+                                                    <a href="#" class="my-2 greyText sansProFont greenHover"><i class="fas fa-caret-right greenColor mr-2"></i>Office Cleaning</a>
+                                                    <a href="#" class="my-2 greyText sansProFont greenHover"><i class="fas fa-caret-right greenColor mr-2"></i>Move in Out Service</a>        
+                                            </div>
+                                    </div>
+                        </div>
+                    </div>
+
+                    <hr class="d-block" style="border-width: 1px; background: white; height: 1px;">
+                    
+                    <div class="d-flex flex-column flex-lg-row justify-content-between text-align-center">
+                            <p class="greyText order-2 order-lg-1 text-center text-lg-left">
+                                    &#174; Copyright 2018 - Company Name | Created by <span class="greenColor">Web Monster</span>
+                            </p>
+                            <div class="order-1 order-lg-2 d-flex justify-content-center">
+                                    <ul class="nav d-flex">
+                                            <li class="nav-item">
+                                             <a class="nav-link text-white py-1 greenHover" href="#"><i class="fab fa-facebook-f"></i></a>
+                                           </li>
+                                           <li class="nav-item">
+                                             <a class="nav-link text-white py-1 greenHover" href="#"><i class="fab fa-twitter"></i></a>
+                                           </li>
+                                           <li class="nav-item">
+                                             <a class="nav-link text-white py-1 greenHover" href="#"><i class="fab fa-instagram"></i></a>
+                                           </li>
+                                           <li class="nav-item">
+                                             <a class="nav-link text-white py-1 pr-0 greenHover" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                           </li>
+                                   </ul>
+                            </div>    
+                    </div>
+                </div>          
+            </footer>
+    <!-- Jquery scrpits -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        var w = window.innerWidth;
+        var contactNav = document.querySelector('.contactNav');
+
+        function resizeHandler() {
+            // Make the initial resize check
+            if (w < 990) {
+                contactNav.classList.remove('fixed-top');
+            } else {
+                contactNav.classList.add('fixed-top');
+            }
+            // Add event listener in case of resize
+            window.addEventListener('resize', function() {
+                w = window.innerWidth;
+
+                if (w < 990) {
+                    contactNav.classList.remove('fixed-top');
+                } else {
+                    contactNav.classList.add('fixed-top');
+                }
+            }) 
+        }
+        resizeHandler();
+    </script>
+</body>
+</html>
