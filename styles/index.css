@@ -20,9 +20,12 @@
 }
 /* Navigation */
 .navShadow {
-    -webkit-box-shadow: 0px 9px 8px -3px rgba(18, 18, 18, 0.6);
-    -moz-box-shadow: 0px 9px 8px -3px rgba(18, 18, 18, 0.6);
-    box-shadow: 0px 9px 8px -3px rgba(18, 18, 18, 0.6);
+    -webkit-box-shadow: 0px 9px 20px -3px rgba(160, 159, 159, 0.25);
+    -moz-box-shadow: 0px 9px 20px -3px rgba(160, 159, 159, 0.25);
+    box-shadow: 0px 9px 20px -3px rgba(160, 159, 159, 0.25);
+}
+.backgroundNav {
+    background: #F3F3F3!important;
 }
 .nav-font {
     font-size: 21px;
@@ -82,15 +85,15 @@
 }
 /* Our Services */
 .carousel-indicators {
-    bottom: -50px;
+    bottom: -30px;
 }
 /* Overwrite default styles */
 .carousel-indicators .active {
     background: #3cbb80; 
 }
 .carousel-indicators li {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
 }
 /* Our Pricing plan */
@@ -132,6 +135,9 @@
         background-repeat: no-repeat;        
         background-size: cover;        
     }
+    .carousel-indicators {
+        bottom: -60px;
+    }
 }
 /* sm */
 @media only screen and (min-width: 480px) and (max-width: 768px) {
@@ -160,6 +166,9 @@
         background: url("../assets/img-clientssay-m.jpg");
         background-repeat: no-repeat;        
         background-size: cover;        
+    }
+    .carousel-indicators {
+        bottom: -60px;
     }
 }
 /* md */
@@ -190,6 +199,9 @@
         background-repeat: no-repeat;        
         background-size: cover;        
     }
+    .carousel-indicators {
+        bottom: -60px;
+    }
 }
 /* lg */
 @media only screen and (min-width: 985px) {
@@ -198,7 +210,7 @@
         top: 48px;
     } 
     .inverse {
-        background: white;
+        background: #f3f3f3;
     }
     .inverse a{
         color: black;

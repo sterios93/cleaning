@@ -90,7 +90,7 @@
                 </div>
             </nav>
             <!-- Mobile only -->
-            <nav class="navbar d-lg-none navbar-light" id="mainNav">
+            <nav class="navbar d-lg-none backgroundNav " id="mainNav">
                     <div class="container">
                         <span class="navbar-brand text-white">
                                 <a href="./index.html" class="nav-font text-dark" style="font-size: 32px;">Top Cleaning</a>
@@ -172,7 +172,7 @@
                     </header>
             </div>
     <!-- About us -->
-            <section class="py-5" style="background: #f3f3f3;">
+            <section class="pt-5" style="background: #f3f3f3;">
                 <div class="container">
                         <div class="row">
                                 <div class="d-none d-lg-block col-6">
@@ -234,15 +234,15 @@
                         <!-- Large Screens only -->
                         <div class="nav d-none d-lg-flex nav-tabs border-0 justify-content-center" id="nav-tab" role="tablist">
                             <a class="nav-item nav-link active d-flex flex-column align-items-center mr-5" id="nav-custommers-tab" data-toggle="tab" href="#nav-custommers" role="tab" aria-controls="nav-custommers" aria-selected="true">
-                                        <img class="mw-50" src="../assets/why-us-icon1.png" rel="some image">
+                                        <img class="mw-50 mb-4" src="../assets/why-us-icon1.png" rel="some image">
                                         <p style="color: #f3f3f3; font-size: 24px;">OUR CUSTOMERS</p>
                             </a>
                             <a class="nav-item nav-link d-flex flex-column align-items-center mr-5" id="nav-environment-tab" data-toggle="tab" href="#nav-environment" role="tab" aria-controls="nav-environment" aria-selected="false">
-                                    <img class="mw-50" src="../assets/why-us-icon2.png" rel="some image">
+                                    <img class="mw-50 mb-4" src="../assets/why-us-icon2.png" rel="some image">
                                     <p style="color: #f3f3f3; font-size: 24px;">THE ENVIRONMENT</p>
                             </a>
                             <a class="nav-item nav-link d-flex flex-column align-items-center" id="nav-communication-tab" data-toggle="tab" href="#nav-communication" role="tab" aria-controls="nav-communication" aria-selected="false">
-                                    <img class="mw-50" src="../assets/why-us-icon3.png" rel="some image">
+                                    <img class="mw-50 mb-4" src="../assets/why-us-icon3.png" rel="some image">
                                     <p style="color: #f3f3f3; font-size: 24px;">COMMUNICATION</p>
                             </a>
                         </div>
@@ -302,10 +302,10 @@
                 </div>
                 <!-- Carousel -->
                     <!-- Large Screen -->
-                    <div id="carouselExampleIndicators" class="carousel slide d-none d-lg-block" data-ride="carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide d-none d-lg-block pb-5" data-ride="carousel">
                             <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active mr-3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="mr-3"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                             </ol>
                             <div class="carousel-inner">
@@ -428,14 +428,14 @@
                     <!-- Mobile -->
                     <div id="carouselExampleIndicators2" class="carousel slide d-lg-none" data-ride="carousel">
                             <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="6"></li>
-                                <li data-target="#carouselExampleIndicators2" data-slide-to="7"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active mr-2"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="1" class="mr-2"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="2" class="mr-2"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="3" class="mr-2"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="4" class="mr-2"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="5" class="mr-2"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="6" class="mr-2"></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="7" class="mr-2"></li>
                                 <li data-target="#carouselExampleIndicators2" data-slide-to="8"></li>                        
                             </ol>
                             <div class="carousel-inner">
@@ -588,7 +588,7 @@
                     </div>
             </section>
     <!-- Our Pricing Plan -->
-            <section style="background: #f3f3f3;">
+            <section style="background: #f3f3f3;" class="pb-5">
                     <p class="h1 text-center font-weight-bold pt-5 pb-2">Our Pricing Plans</p>
                     <div class="container pb-3">
                         <div class="row d-flex justify-content-center ">
@@ -1082,8 +1082,10 @@
             if (w > 990) {
                 if (scrollPosY > 1) { 
                     mainNav.classList.add('inverse');
+                    mainNav.classList.add('navShadow');
                 } else {
                     mainNav.classList.remove('inverse');
+                    mainNav.classList.remove('navShadow');
                 }
             } 
         });
