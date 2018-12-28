@@ -173,13 +173,183 @@
                                     </div>
                                     <div class="form-row">
                                             <div class="form-group col-12 ">
-                                                    <label for="service">Type of service: *</label>
-                                                    <select id="service" class="form-control rounded-0">
+                                                    <label for="serviceType">Type of service: *</label>
+                                                    <select id="serviceType" class="form-control rounded-0">
                                                     <option selected>Select a service..</option>
-                                                    <option>...</option>
+                                                    <option value="End of Tenancy">End of Tenancy</option>
+                                                    <option value="Deep Cleaning">Deep Cleaning</option>
                                                     </select>
                                             </div>
                                     </div>
+                                    <!-- Show only on end Tenancy -->
+                                    <div class="d-none endTenancy">
+                                        <div class="form-row">
+                                            <div class="form-group col-12 ">
+                                                    <label for="propertyType">Property Type: *</label>
+                                                    <select id="propertyType" class="form-control rounded-0">
+                                                    <option selected>---</option>
+                                                    <option value="Studio">Studio</option>
+                                                    <option value="1 Bedroom Flat">1 Bedroom Flat</option>
+                                                    <option value="1 Bedroom House">1 Bedroom House</option>
+                                                    <option value="2 Bedrooms Flat">2 Bedrooms Flat</option>
+                                                    <option value="2 Bedrooms House">2 Bedrooms House</option>
+                                                    <option value="3 Bedrooms Flat">3 Bedrooms Flat</option>
+                                                    <option value="3 Bedrooms House">3 Bedrooms House</option>
+                                                    <option value="4 Bedrooms Flat">4 Bedrooms Flat</option>
+                                                    <option value="4 Bedrooms House">4 Bedrooms House</option>
+                                                    <option value="5 Bedrooms +">5 Bedrooms +</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-row justify-content-around">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="Furnished" id="Furnished" value="Furnished">
+                                                <label class="form-check-label" for="Furnished">Furnished</label>
+                                              </div>
+                                              <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="Unfurnished" id="Unfurnished" value="Unfurnished">
+                                                <label class="form-check-label" for="Unfurnished">Unfurnished</label>
+                                              </div>
+                                              <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="partly" id="partly" value="Partly Furnished">
+                                                <label class="form-check-label" for="partly">Partly Furnished</label>
+                                              </div>
+                                        </div>
+                                        <div class="form-row mt-3">
+                                            <div class="form-group col-12 col-lg-4 ">
+                                                    <label for="bathroom">Bathroom: *</label>
+                                                    <select id="bathroom" class="form-control rounded-0">
+                                                    <option selected>---</option>
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="7">6</option>
+                                                    <option value="7+">7+</option>
+                                                    </select>
+                                            </div>
+                                            <div class="form-group col-12 col-lg-4 ">
+                                                <label for="utilityRoom">Utility room: *</label>
+                                                <select id="utilityRoom" class="form-control rounded-0">
+                                                <option selected>---</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7+">7+</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-12 col-lg-4 ">
+                                                <label for="storageRoom">Storarge Room: *</label>
+                                                <select id="storageRoom" class="form-control rounded-0">
+                                                <option selected>---</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7+">7+</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-3">
+                                            <div class="form-group col-12 col-lg-4 ">
+                                                    <label for="walk-in-wardrobe">Walk-in-wardrobe: *</label>
+                                                    <select id="walk-in-wardrobe" class="form-control rounded-0">
+                                                    <option selected>---</option>
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7+">7+</option>
+                                                    </select>
+                                            </div>
+                                            <div class="form-group col-12 col-lg-4 ">
+                                                <label for="fridge">Fridge/freezer: *</label>
+                                                <select id="fridge" class="form-control rounded-0">
+                                                <option selected>---</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7+">7+</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-12 col-lg-4 ">
+                                                <label for="oven">Oven: *</label>
+                                                <select id="oven" class="form-control rounded-0">
+                                                <option selected>---</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7+">7+</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-3">
+                                            <div class="form-group col-12 col-lg-4 ">
+                                                    <label for="blinds">Blinds: *</label>
+                                                    <select id="blinds" class="form-control rounded-0">
+                                                    <option selected>---</option>
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7+">7+</option>
+                                                    </select>
+                                            </div>
+                                            <div class="form-group col-12 col-lg-4 ">
+                                                <label for="balcony">Balcony: *</label>
+                                                <select id="balcony" class="form-control rounded-0">
+                                                <option selected>---</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7+">7+</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-12 col-lg-4 ">
+                                                <label for="staircase">Staircase</label>
+                                                <select id="staircase" class="form-control rounded-0">
+                                                <option selected>---</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7+">7+</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                     <div class="form-row">
                                         <p class="ml-1 mb-1"> Service Days (required)</p>
                                      </div>
@@ -358,6 +528,17 @@
             }) 
         }
         resizeHandler();
+
+        // logic for showing or hiding additional inputs
+
+        var endTenancy = document.querySelector('.endTenancy');
+        $('#serviceType').on('change', function(e) {
+            if (e.target.value === 'End of Tenancy') {
+                endTenancy.classList.remove('d-none')
+            } else {
+                endTenancy.classList.add('d-none')
+            }
+        })
     </script>
 </body>
 </html>
